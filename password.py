@@ -25,6 +25,6 @@ while True:
         continue
 
     password_hache = hashlib.sha256(password.encode()).hexdigest()
-    print("Mot de passe valide!")
+    print("Mot de passe valide !")
     print("SHA-256 :", password_hache)
     break
