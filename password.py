@@ -28,16 +28,3 @@ while True:
     print("Mot de passe valide !")
     print("SHA-256 :", password_hache)
     break
-
-
-
-
-#QuestcequeleLoremIpsum?LeLoremIpsumestsimplementdufauxtexteemployédanslacompositionetlamiseenpageavantimpression.LeLoremIpsumestlefauxtextestandarddelimprimeried
-# epuislesannées1500,quandunimprimeuranonymeassemblaensembledesmorceauxdetextepourréaliserunlivrespécimendepolicesdetexte.Ilnapasfaitquesurvivrecinqsiècles,maiss
-# estaussiadaptéàlabureautiqueinformatique,sansquesoncontenunensoitmodifié.Ilaétépopularisédanslesannées1960grâceàlaventedefeuil
-#lesLetrasetcontenantdespassagesduLoremIpsum,et,plusrécemment,parsoninclusiondansdesapplicationsdemiseenpagedetexte,com
-# meAldusPageMaker.Pourquoilutiliser?On sait depuis longtemps que travailler avec du texte lisible et contenant du sens est source de dist
-# ractions, et empêche de se concentrer sur la mise en page elle-même. LavantageduLoremIpsumsuruntextegénériquecommeDutexte.Dutexte.Dutexte.estquilpossèdeunedi
-# ndelettesplusoumoinsnormale,etentoutcascomparableaveccelledufrançaisstandard.DenombreusessuiteslogicielesdemiseenpageouéditeursdesitesWebontfaitduLoremIpsuml
-# eurfauxtextepardéfaut,etunerecherchepourLoremIpsumvousconduiraversdenombreuxsitesquinensontencorequaleurphasedeconstruccion.Plusieursversionssontapparuesavecletemps,parfois
-# paraccident,souventintentionnellement(histoiredyrajouterdepettisclinsdoeil,voiredesphrasesembarrassantes).
