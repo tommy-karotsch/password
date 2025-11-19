@@ -122,26 +122,27 @@ def supprimer_mots_de_passe():
      else:
         print("Numéro introuvable. ")
 
-# ----- MENU -----
-while True:
-     print("\n====== MENU ======= ")
-     print("1 -------> Ajouter un mot de passe ")
-     print("2 -------> Créé un mot de passe aléatoire ")
-     print("3 -------> Supprimer un mot de passe ") 
-     print("4 -------> Afficher tous les mots de passe ")
-     print("5 -------> Quitter ")
-     
-     choix = input("Choix : ")
-     if choix == "1":
-          ajouter_un_mot_de_passe()
-     elif choix == "2":
-          generator_password()
-     elif choix == "3":
-          supprimer_mots_de_passe()
-     elif choix == "4":
-        afficher_mots_de_passe()
-     elif choix == "5":
-          break
-     else:
-        print("Choix invalide. ")
+# ====== MENU ======= 
+def menu():
+     while True:
+          print("\n====== MENU ======= ")
+          print("1 -------> Ajouter un mot de passe ")
+          print("2 -------> Créé un mot de passe aléatoire ")
+          print("3 -------> Supprimer un mot de passe ") 
+          print("4 -------> Afficher tous les mots de passe ")
+          print("5 -------> Quitter ")
+          
+          choix = input("Choix : ")
+          if choix == "1":
+               ajouter_un_mot_de_passe()
+          elif choix == "2":
+               generator_password()
+          elif choix == "3":
+               supprimer_mots_de_passe()
+          elif choix == "4":
+               afficher_mots_de_passe()
+          elif choix == "5":
+               break
+          else:
+               print("Choix invalide. ")
 
