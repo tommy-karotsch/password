@@ -20,9 +20,9 @@ if nums:
 
 if syms: all += symbols
 
-length = 15
-amount = 15
+length = 12
+amount = 3
 
 for x in range(amount):
     password = "".join(random.choices(all, k=length))
-    print(password)
+    print(password)''
