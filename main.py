@@ -3,7 +3,7 @@ import hashlib
 import json
 import os
 
-FICHIER = "mots_de_passe.json"
+FICHIER = "password.json"
 
 # 0 - Charge le fichier ou en créer un vide
 if os.path.exists(FICHIER):
@@ -17,7 +17,7 @@ def sauvegarder():
     with open(FICHIER, "w") as f:
         json.dump(data, f, indent=4)
         print("Mot de passe enregistré dans", FICHIER)
-
+        
 # 1 - Ajouter un mot de passe
 def ajouter_un_mot_de_passe():
     while True: 
@@ -41,6 +41,10 @@ def ajouter_un_mot_de_passe():
     
         if not any(c in "-_.;:!?,£€()[]{}/\\!@#$%^&*" for c in password):
             print("Le mot de passe doit contenir au moins un caractère spécial.")
+            continue
+
+        if mdp_existe_deja(password):
+            print("Ce mot de passe existe déjà.")
             continue
 
         # Hash en SHA-256
@@ -123,6 +127,11 @@ def supprimer_mots_de_passe():
         print("Mot de passe supprimé.")
     else:
         print("Numéro introuvable.")
+
+# 0 - Vérifie si mot de passe existe déjà
+def mdp_existe_deja(password):
+    password_hache = hashlib.sha256(password.encode()).hexdigest()
+    return password_hache in data.values()
 
 # ====== MENU ======= 
 def menu():
