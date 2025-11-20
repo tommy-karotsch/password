@@ -5,7 +5,7 @@ import os
 
 FICHIER = "mots_de_passe.json"
 
-# 0 - Charger le fichier ou en créer un vide
+# 0 - Charge le fichier ou en créer un vide
 if os.path.exists(FICHIER):
     with open(FICHIER, "r") as f:
         data = json.load(f)
@@ -48,7 +48,7 @@ def ajouter_un_mot_de_passe():
         print("Mot de passe valide !")
         print("SHA-256 :", password_hache)
 
-        # Définir une clé unique pour ce mot de passe hashé
+        # Définir une clé unique mot de passe hashé
         nouvelle_cle = f"= {len(data) + 1} - password"
         data[nouvelle_cle] = password_hache
 
